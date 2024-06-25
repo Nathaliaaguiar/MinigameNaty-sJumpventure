@@ -1,0 +1,58 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  overflow: hidden;
+  background: url('2271.jpg') no-repeat center center/cover;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 40px; /* Adiciona espaço acima do conteúdo, movendo o h1 para baixo */
+}
+p {
+    font-size: 20px; /* Tamanho da fonte aumentado */
+    color: black; /* Cor do texto verde */
+    line-height: 1.8; /* Espaçamento entre linhas aumentado */
+    margin-bottom: 20px; /* Margem inferior reduzida */
+    font-family: 'Arial', sans-serif; /* Escolha de uma fonte agradável */
+    text-align: justify; /* Texto justificado para melhor legibilidade */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Sombra suave para destacar o texto */
+    transition: color 0.3s ease-in-out; /* Adiciona uma transição suave na cor do texto */
+}
+
+p:hover {
+    color: #00008B; /* Altera a cor do texto para laranja quando o mouse passa por cima */
+}
+
+h1 {
+    font-size: 36px;
+    color: #00008B;
+    margin-bottom: 20px;
+}
+
+.container {
+    text-align: center;
+    padding: 30px;
+    border-radius: 0px;
+     margin-top: -250px; /* Adiciona uma margem negativa para posicionar o conteúdo acima do centro */
+    max-width: 600px; /* Defina a largura máxima do container */
+    width: 100%; /* Garante que o container não ultrapasse a largura máxima definida */
+}
+
+.custom-button {
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 24px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.custom-button:hover {
+  background-color: #45a049;
+}
+
+/* Estilos adicionais para a página do jogo podem ser adicionados no arquivo jogo.html */

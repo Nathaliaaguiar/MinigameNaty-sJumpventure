@@ -1,0 +1,98 @@
+body {
+margin: 0;
+    overflow: hidden;
+    background: url('fundo6.jpg') no-repeat center center/cover;
+    width: 100vw;
+    height: 100vh;
+    padding-top: 40px; /* Adiciona espaço acima do conteúdo, movendo o h1 para baixo */
+}
+h1 {
+    text-align: center;
+    font-size: 36px;
+    color: #00008B; /* Cor do texto */
+   
+  position: relative; /* Adiciona posição relativa para permitir z-index */
+  z-index: 1; /* Garante que o h1 fique à frente do plano de fundo */
+}
+.score {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 15px 30px;
+  font-size: 24px;
+  font-family: 'Arial', sans-serif;
+  color: #fff;
+  background: linear-gradient(to right, #4CAF50, #45a049); /* Gradiente de cor de fundo */
+  border: none;
+  border-radius: 50px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+  transition: all 0.3s ease;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+.game-container {
+    width: 100vw;
+    height: 100vh;
+   
+    position: relative;
+}
+
+
+.mario {
+    width: 100px;
+    height: 140px;
+    background: url('naty.png') no-repeat;
+    background-size: cover;
+    position: absolute;
+  bottom: 60px; /* Ajuste para a altura desejada em relação ao chão */
+  left: 0%; /* Posiciona o Mario no centro horizontalmente */
+  transform: translateX(50%); /* Centraliza horizontalmente o Mario */
+}
+
+
+.obstacle {
+    width: 200px;
+    height: 200px;
+    background-image: url('carro.png');
+    background-size: cover;
+    position: absolute;
+    bottom: 0;
+    left: 100%; /* Inicia do lado direito */
+    animation: obstacle-animation 2s linear infinite;
+}
+
+.jump-button {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.game-over-message {
+    width: 400px; /* Defina a largura da imagem conforme necessário */
+    height: 300px; /* Defina a altura da imagem conforme necessário */
+    background-image: url('gameover.png'); /* Substitua pelo caminho da sua imagem */
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
